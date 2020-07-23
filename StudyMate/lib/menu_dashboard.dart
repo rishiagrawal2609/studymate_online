@@ -65,19 +65,19 @@ class _MenuDashboardPageState extends State<MenuDashboardPage>
               mainAxisAlignment: MainAxisAlignment.spaceAround,
               crossAxisAlignment: CrossAxisAlignment.start,
               children: <Widget>[
-                Text("Dashboard",
+                Text('Dashboard',
                     style: TextStyle(color: Colors.white, fontSize: 22)),
                 SizedBox(height: 10),
-                Text("CLASS",
+                Text('CLASS',
                     style: TextStyle(color: Colors.white, fontSize: 22)),
                 SizedBox(height: 10),
-                Text("Utility Bills",
+                Text('Utility Bills',
                     style: TextStyle(color: Colors.white, fontSize: 22)),
                 SizedBox(height: 10),
-                Text("Funds Transfer",
+                Text('Funds Transfer',
                     style: TextStyle(color: Colors.white, fontSize: 22)),
                 SizedBox(height: 10),
-                Text("Branches",
+                Text('Branches',
                     style: TextStyle(color: Colors.white, fontSize: 22)),
               ],
             ),
@@ -117,16 +117,17 @@ class _MenuDashboardPageState extends State<MenuDashboardPage>
                         child: Icon(Icons.menu, color: Colors.white),
                         onTap: () {
                           setState(() {
-                            if (isCollapsed)
+                            if (isCollapsed) {
                               _controller.forward();
-                            else
+                            } else {
                               _controller.reverse();
+                            }
 
                             isCollapsed = !isCollapsed;
                           });
                         },
                       ),
-                      Text("My Cards",
+                      Text('My Cards',
                           style: TextStyle(fontSize: 24, color: Colors.white)),
                       Icon(Icons.settings, color: Colors.white),
                     ],
