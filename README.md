@@ -22,8 +22,8 @@ Firebase<br>
             *Online Class.<br>                    *Result.<br>
 	* Study Material.<br>
        	* Syllabus<br>     
-	
-	
+## Login and SignUp page
+Signup page is the page in which student/teacher register yourself by filling their details and those details are submitted to our firebase (Realtime) and student/teacher use those details for signin
 
 
 
