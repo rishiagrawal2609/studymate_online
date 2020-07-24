@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "507857657674",
+    "firebase_url": "https://study-mate-online.firebaseio.com",
+    "project_id": "study-mate-online",
+    "storage_bucket": "study-mate-online.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:507857657674:android:28388bda4d3b8f4ba02bb3",
+        "android_client_info": {
+          "package_name": "com.example.StudyMate"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "507857657674-0256pdc232c4itqs52t9otkagf0dnpud.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDATwVku9fY6lCi11Ek0LRbQhYB0BLl_Rg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "507857657674-0256pdc232c4itqs52t9otkagf0dnpud.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
