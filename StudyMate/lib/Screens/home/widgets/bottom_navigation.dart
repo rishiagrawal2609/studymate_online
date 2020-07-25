@@ -3,7 +3,7 @@ import 'package:flutter_svg/svg.dart';
 import 'package:StudyMate/Screens/home/constants.dart';
 import 'package:StudyMate/Screens/home/screens/classes_screen.dart';
 import 'package:StudyMate/Screens/home/screens/home_screen.dart';
-import 'package:StudyMate/src/pages/index.dart'
+import 'package:StudyMate/src/pages/index.dart';
 
 class BottomNavigation extends StatefulWidget {
   @override
