@@ -3,7 +3,6 @@ import 'package:intl/intl.dart';
 import 'package:StudyMate/Screens/home/constants.dart';
 import 'package:StudyMate/Screens/home/models/classes.dart';
 
-
 class BuildClasses extends StatelessWidget {
   final DateFormat dateFormat = DateFormat("hh:mm a");
 
