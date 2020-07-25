@@ -1,19 +1,19 @@
+import 'package:StudyMate/Screens/wrapper.dart';
+import 'package:StudyMate/services/auth.dart';
 import 'package:flutter/material.dart';
-
-import 'StudentDashboard.dart';
+import 'package:provider/provider.dart';
+import 'package:StudyMate/models/user.dart';
 
 void main() => runApp(MyApp());
 
 class MyApp extends StatelessWidget {
-  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'ON Class',
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
+    return StreamProvider<User>.value(
+      value: AuthService().user,
+      child: MaterialApp(
+        home: Wrapper(),
       ),
-      home: Home(),
     );
   }
 }
