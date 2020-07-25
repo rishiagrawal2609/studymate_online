@@ -3,6 +3,7 @@ import 'package:flutter_svg/svg.dart';
 import 'package:StudyMate/Screens/home/constants.dart';
 import 'package:StudyMate/Screens/home/screens/classes_screen.dart';
 import 'package:StudyMate/Screens/home/screens/home_screen.dart';
+import 'package:StudyMate/src/pages/index.dart'
 
 class BottomNavigation extends StatefulWidget {
   @override
@@ -15,12 +16,14 @@ class _BottomNavigationState extends State<BottomNavigation> {
   List<Widget> _pages;
   HomeScreen _homeScreen;
   ClassesScreen _classesScreen;
+  OnlineClass _onlineScreen;
 
   @override
   void initState() {
     super.initState();
     _homeScreen = HomeScreen();
     _classesScreen = ClassesScreen();
+    _onlineScreen = IndexPage();
     _pages = [_homeScreen, _classesScreen];
     _currentPage = _homeScreen;
   }
