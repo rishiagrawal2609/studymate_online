@@ -24,7 +24,7 @@ class _BottomNavigationState extends State<BottomNavigation> {
     _homeScreen = HomeScreen();
     _classesScreen = ClassesScreen();
     _onlineScreen = IndexPage();
-    _pages = [_homeScreen, _classesScreen];
+    _pages = [_homeScreen, _classesScreen, _onlineScreen];
     _currentPage = _homeScreen;
   }
 
