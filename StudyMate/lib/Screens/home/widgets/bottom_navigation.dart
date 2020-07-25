@@ -16,15 +16,15 @@ class _BottomNavigationState extends State<BottomNavigation> {
   List<Widget> _pages;
   HomeScreen _homeScreen;
   ClassesScreen _classesScreen;
-  OnlineClass _onlineScreen;
+  IndexPage _onlineClass;
 
   @override
   void initState() {
     super.initState();
     _homeScreen = HomeScreen();
     _classesScreen = ClassesScreen();
-    _onlineScreen = IndexPage();
-    _pages = [_homeScreen, _classesScreen, _onlineScreen];
+    _onlineClass = IndexPage();
+    _pages = [_homeScreen, _classesScreen, _onlineClass];
     _currentPage = _homeScreen;
   }
 
