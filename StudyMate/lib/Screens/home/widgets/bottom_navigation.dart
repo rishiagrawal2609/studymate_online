@@ -58,7 +58,7 @@ class _BottomNavigationState extends State<BottomNavigation> {
           onTap: (int index) {
             setState(() {
               _selectedTab = index;
-              if (index == 0 || index == 1) _currentPage = _pages[index];
+              if (index == 0 || index == 1 || index == 2) _currentPage = _pages[index];
             });
           },
           items: [
