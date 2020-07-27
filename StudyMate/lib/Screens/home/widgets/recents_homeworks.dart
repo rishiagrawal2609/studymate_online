@@ -24,7 +24,7 @@ class _RecentHomeworksState extends State<RecentHomeworks> {
               margin: EdgeInsets.only(bottom: 30.0),
               padding: EdgeInsets.fromLTRB(20.0, 20.0, 10.0, 10.0),
               height: 100.0,
-              width: 281.0,
+              width: 287.0,
               decoration: BoxDecoration(
                 color: kCardColor,
                 borderRadius: BorderRadius.circular(12.0),
