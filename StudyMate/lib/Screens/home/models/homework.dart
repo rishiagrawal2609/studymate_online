@@ -9,10 +9,10 @@ class Homework {
 List<Homework> recentHomeworks = [
   Homework(
     title: 'C++ Exercises',
-    dueTime: DateTime.parse('2020-06-08 10:30:00'),
+    dueTime: DateTime.parse('2020-07-30 10:30:00'),
   ),
   Homework(
     title: 'Python Exercises',
-    dueTime: DateTime.parse('2020-06-09 14:30:00'),
+    dueTime: DateTime.parse('2020-07-28 14:30:00'),
   ),
 ];
