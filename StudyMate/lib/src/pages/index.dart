@@ -1,12 +1,13 @@
 import 'dart:async';
 
+import 'package:StudyMate/Screens/home/drawer/navigation_bloc/navigation_bloc.dart';
 import 'package:agora_rtc_engine/agora_rtc_engine.dart';
 import 'package:flutter/material.dart';
 import 'package:permission_handler/permission_handler.dart';
 
 import './call.dart';
 
-class IndexPage extends StatefulWidget {
+class IndexPage extends StatefulWidget with NavigationStates {
   @override
   State<StatefulWidget> createState() => IndexState();
 }
@@ -31,8 +32,9 @@ class IndexState extends State<IndexPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('ON Class'),
+        title: Text('Online Class'),
       ),
+      backgroundColor: Color(0xFF758AA2),
       body: Center(
         child: Container(
           padding: const EdgeInsets.symmetric(horizontal: 20),
