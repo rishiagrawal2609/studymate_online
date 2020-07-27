@@ -46,6 +46,7 @@ class _SignInState extends State<SignIn> {
                     hintText: 'Email',
                   ),
                   onChanged: (val) {
+                    // ignore: unused_label
                     validator:
                     (val) => val.isEmpty ? 'Enter an Email' : null;
                     setState(() => email = val);
@@ -57,6 +58,7 @@ class _SignInState extends State<SignIn> {
                   ),
                   obscureText: true,
                   onChanged: (val) {
+                    // ignore: unused_label
                     validator:
                     (val) => val.length < 6
                         ? 'Enter an Password 6+ char long'

@@ -10,14 +10,14 @@ class RecentHomeworks extends StatefulWidget {
 }
 
 class _RecentHomeworksState extends State<RecentHomeworks> {
-  DateFormat dateFormat = DateFormat("hh:mm a");
+  DateFormat dateFormat = DateFormat('hh:mm a');
   @override
   Widget build(BuildContext context) {
     return ListView.builder(
       shrinkWrap: true,
       itemCount: recentHomeworks.length,
       itemBuilder: (BuildContext context, int index) {
-        Homework homework = recentHomeworks[index];
+        var homework = recentHomeworks[index];
         return Row(
           children: <Widget>[
             Container(
@@ -75,7 +75,7 @@ class _RecentHomeworksState extends State<RecentHomeworks> {
     );
   }
 
-  _todoButton(Homework homework) {
+  RaisedButton _todoButton(Homework homework) {
     return RaisedButton(
       onPressed: () {
         setState(() {

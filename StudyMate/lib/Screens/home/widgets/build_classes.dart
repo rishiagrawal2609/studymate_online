@@ -4,7 +4,7 @@ import 'package:StudyMate/Screens/home/constants.dart';
 import 'package:StudyMate/Screens/home/models/classes.dart';
 
 class BuildClasses extends StatelessWidget {
-  final DateFormat dateFormat = DateFormat("hh:mm a");
+  final DateFormat dateFormat = DateFormat('hh:mm a');
 
   @override
   Widget build(BuildContext context) {
@@ -13,14 +13,14 @@ class BuildClasses extends StatelessWidget {
       physics: BouncingScrollPhysics(),
       itemCount: classes.length,
       itemBuilder: (BuildContext context, int index) {
-        Classes c = classes[index];
+        var c = classes[index];
         _getStatus(c);
         return Column(
           children: <Widget>[
             Row(
               children: <Widget>[
                 Text(
-                  "${dateFormat.format(c.time)}",
+                  '${dateFormat.format(c.time)}',
                   style: TextStyle(
                     color: c.isPassed
                         ? Colors.white.withOpacity(0.2)
@@ -51,7 +51,7 @@ class BuildClasses extends StatelessWidget {
                         ),
                         child: Center(
                             child: Text(
-                          "Now",
+                          'Now',
                           style: TextStyle(color: Colors.white),
                         )),
                       )
@@ -128,9 +128,10 @@ class BuildClasses extends StatelessWidget {
     );
   }
 
+  // ignore: always_declare_return_types
   _getStatus(Classes c) {
-    DateTime now = DateTime.now();
-    DateTime finishedTime = c.time.add(Duration(hours: 1));
+    var now = DateTime.now();
+    var finishedTime = c.time.add(Duration(hours: 1));
 
     if (now.difference(c.time).inMinutes >= 59) {
       c.isPassed = true;
@@ -140,7 +141,7 @@ class BuildClasses extends StatelessWidget {
     }
   }
 
-  _getTime(Classes c, context) {
+  Container _getTime(Classes c, context) {
     return Container(
       height: 25.0,
       width: 25.0,
@@ -157,7 +158,7 @@ class BuildClasses extends StatelessWidget {
     );
   }
 
-  _getChild(Classes c, context) {
+  StatelessWidget _getChild(Classes c, context) {
     if (c.isPassed) {
       return Icon(
         Icons.check,

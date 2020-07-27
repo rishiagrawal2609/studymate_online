@@ -25,7 +25,7 @@ class _HomeScreenState extends State<HomeScreen> {
               border: InputBorder.none,
               fillColor: Theme.of(context).primaryColor,
               filled: true,
-              hintText: "Search",
+              hintText: 'Search',
               hintStyle: TextStyle(color: kTextColor),
               prefixIcon: Icon(Icons.search, color: kTextColor, size: 26.0),
               enabledBorder: OutlineInputBorder(
@@ -48,7 +48,7 @@ class _HomeScreenState extends State<HomeScreen> {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: <Widget>[
               Text(
-                "Recent Alerts",
+                'Recent Alerts',
                 style: TextStyle(
                   color: Colors.white,
                   fontSize: 20.0,
@@ -59,14 +59,14 @@ class _HomeScreenState extends State<HomeScreen> {
               RecentsAlerts(),
               Center(
                 child: Text(
-                  "View all",
+                  'View all',
                   style: TextStyle(
                       color: Theme.of(context).accentColor, fontSize: 15.0),
                 ),
               ),
               SizedBox(height: 20.0),
               Text(
-                "Recent Homework",
+                'Recent Homework',
                 style: TextStyle(
                   color: Colors.white,
                   fontSize: 20.0,
@@ -77,7 +77,7 @@ class _HomeScreenState extends State<HomeScreen> {
               RecentHomeworks(),
               Center(
                 child: Text(
-                  "View all",
+                  'View all',
                   style: TextStyle(
                       color: Theme.of(context).accentColor, fontSize: 15.0),
                 ),

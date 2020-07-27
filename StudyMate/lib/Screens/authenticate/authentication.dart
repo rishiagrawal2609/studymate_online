@@ -1,7 +1,6 @@
 import 'package:StudyMate/Screens/authenticate/register.dart';
 import 'package:StudyMate/Screens/authenticate/sign_in.dart';
 import 'package:flutter/material.dart';
-import 'package:StudyMate/Screens/authenticate/register.dart';
 
 class Authenticate extends StatefulWidget {
   @override
