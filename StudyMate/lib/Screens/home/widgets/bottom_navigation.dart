@@ -4,6 +4,7 @@ import 'package:StudyMate/Screens/home/constants.dart';
 import 'package:StudyMate/Screens/home/screens/classes_screen.dart';
 import 'package:StudyMate/Screens/home/screens/home_screen.dart';
 import 'package:StudyMate/src/pages/index.dart';
+import 'package:StudyMate/Quiz/splash.dart';
 
 class BottomNavigation extends StatefulWidget {
   @override
@@ -17,6 +18,7 @@ class _BottomNavigationState extends State<BottomNavigation> {
   HomeScreen _homeScreen;
   ClassesScreen _classesScreen;
   IndexPage _onlineClass;
+  splashscreen _quiz;
 
   @override
   void initState() {
@@ -24,7 +26,8 @@ class _BottomNavigationState extends State<BottomNavigation> {
     _homeScreen = HomeScreen();
     _classesScreen = ClassesScreen();
     _onlineClass = IndexPage();
-    _pages = [_homeScreen, _classesScreen, _onlineClass];
+    _quiz = splashscreen();
+    _pages = [_homeScreen, _classesScreen, _onlineClass, _quiz];
     _currentPage = _homeScreen;
   }
 
@@ -58,7 +61,7 @@ class _BottomNavigationState extends State<BottomNavigation> {
           onTap: (int index) {
             setState(() {
               _selectedTab = index;
-              if (index == 0 || index == 1 || index == 2) {
+              if (index == 0 || index == 1 || index == 2 || index == 3) {
                 _currentPage = _pages[index];
               }
             });
