@@ -1,9 +1,10 @@
+import 'package:StudyMate/Screens/home/drawer/navigation_bloc/navigation_bloc.dart';
 import 'package:flutter/material.dart';
 import 'package:StudyMate/Screens/home/constants.dart';
 import 'package:StudyMate/Screens/home/widgets/build_classes.dart';
 import 'package:StudyMate/Screens/home/widgets/header.dart';
 
-class ClassesScreen extends StatefulWidget {
+class ClassesScreen extends StatefulWidget with NavigationStates {
   @override
   _ClassesScreenState createState() => _ClassesScreenState();
 }
