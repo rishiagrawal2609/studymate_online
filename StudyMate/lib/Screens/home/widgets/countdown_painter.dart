@@ -12,22 +12,22 @@ class CountdownPainter extends CustomPainter {
 
   @override
   void paint(Canvas canvas, Size size) {
-    Paint bgLine = Paint()
+    var bgLine = Paint()
       ..color = bgColor
       ..strokeCap = StrokeCap.round
       ..style = PaintingStyle.stroke
       ..strokeWidth = width;
 
-    Paint completeLine = Paint()
+    var completeLine = Paint()
       ..color = lineColor
       ..strokeCap = StrokeCap.round
       ..style = PaintingStyle.stroke
       ..strokeWidth = width;
 
-    Offset center = Offset(size.width / 2, size.height / 2);
-    double radius = min(size.width / 2, size.height / 2);
+    var center = Offset(size.width / 2, size.height / 2);
+    var radius = min(size.width / 2, size.height / 2);
 
-    double sweepAngle = 2 * pi * percent;
+    var sweepAngle = 2 * pi * percent;
 
     canvas.drawCircle(center, radius, bgLine);
     canvas.drawArc(Rect.fromCircle(center: center, radius: radius), -pi / 2,

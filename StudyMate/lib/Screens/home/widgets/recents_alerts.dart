@@ -6,7 +6,7 @@ import 'package:StudyMate/Screens/home/models/alert.dart';
 import 'package:StudyMate/Screens/home/widgets/countdown_painter.dart';
 
 class RecentsAlerts extends StatelessWidget {
-  final DateFormat dateFormat = DateFormat("hh:mm a");
+  final DateFormat dateFormat = DateFormat('hh:mm a');
 
   @override
   Widget build(BuildContext context) {
@@ -14,10 +14,10 @@ class RecentsAlerts extends StatelessWidget {
       shrinkWrap: true,
       itemCount: recentAlerts.length,
       itemBuilder: (BuildContext context, int index) {
-        Alert alert = recentAlerts[index];
-        int hoursLeft = DateTime.now().difference(alert.time).inHours;
+        var alert = recentAlerts[index];
+        var hoursLeft = DateTime.now().difference(alert.time).inHours;
         hoursLeft = hoursLeft < 0 ? -hoursLeft : 0;
-        double percent = hoursLeft / 48;
+        var percent = hoursLeft / 48;
 
         return Row(
           children: <Widget>[
@@ -110,7 +110,7 @@ class RecentsAlerts extends StatelessWidget {
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: <Widget>[
                             Text(
-                              "$hoursLeft",
+                              '$hoursLeft',
                               style: TextStyle(
                                 color: _getColor(context, percent),
                                 fontSize: 26.0,
@@ -118,7 +118,7 @@ class RecentsAlerts extends StatelessWidget {
                               ),
                             ),
                             Text(
-                              "hours left",
+                              'hours left',
                               style: TextStyle(
                                 color: _getColor(context, percent),
                                 fontSize: 13.0,
@@ -138,7 +138,7 @@ class RecentsAlerts extends StatelessWidget {
     );
   }
 
-  _getColor(BuildContext context, double percent) {
+  Color _getColor(BuildContext context, double percent) {
     if (percent >= 0.4) return Theme.of(context).accentColor;
 
     return kHourColor;

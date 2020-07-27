@@ -41,7 +41,7 @@ class _BottomNavigationState extends State<BottomNavigation> {
     );
   }
 
-  _bottomNavigator() {
+  Positioned _bottomNavigator() {
     return Positioned(
       bottom: 0.0,
       left: 0.0,
@@ -58,13 +58,15 @@ class _BottomNavigationState extends State<BottomNavigation> {
           onTap: (int index) {
             setState(() {
               _selectedTab = index;
-              if (index == 0 || index == 1 || index == 2) _currentPage = _pages[index];
+              if (index == 0 || index == 1 || index == 2) {
+                _currentPage = _pages[index];
+              }
             });
           },
           items: [
             BottomNavigationBarItem(
               icon: SvgPicture.asset(
-                "assets/icons/house.svg",
+                'assets/icons/house.svg',
                 width: 35.0,
                 color: _selectedTab == 0
                     ? Theme.of(context).accentColor
@@ -74,7 +76,7 @@ class _BottomNavigationState extends State<BottomNavigation> {
             ),
             BottomNavigationBarItem(
               icon: SvgPicture.asset(
-                "assets/icons/read_book.svg",
+                'assets/icons/read_book.svg',
                 width: 35.0,
                 color: _selectedTab == 1
                     ? Theme.of(context).accentColor
@@ -84,7 +86,7 @@ class _BottomNavigationState extends State<BottomNavigation> {
             ),
             BottomNavigationBarItem(
               icon: SvgPicture.asset(
-                "assets/icons/homework.svg",
+                'assets/icons/homework.svg',
                 width: 35.0,
                 color: _selectedTab == 2
                     ? Theme.of(context).accentColor
@@ -94,7 +96,7 @@ class _BottomNavigationState extends State<BottomNavigation> {
             ),
             BottomNavigationBarItem(
               icon: SvgPicture.asset(
-                "assets/icons/comment.svg",
+                'assets/icons/comment.svg',
                 width: 35.0,
                 color: _selectedTab == 3
                     ? Theme.of(context).accentColor

@@ -10,11 +10,11 @@ class Header extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.spaceAround,
         children: <Widget>[
           SvgPicture.asset(
-            "assets/icons/grad_cap.png",
+            'assets/icons/grad_cap.png',
             height: 70.0,
           ),
           Text(
-            "My Class",
+            'My Class',
             style: TextStyle(
               color: Colors.white,
               fontSize: 30.0,
@@ -23,7 +23,7 @@ class Header extends StatelessWidget {
           ),
           CircleAvatar(
             radius: 25.0,
-            backgroundImage: AssetImage("assets/images/profile.jpg"),
+            backgroundImage: AssetImage('assets/images/profile.jpg'),
           ),
         ],
       ),

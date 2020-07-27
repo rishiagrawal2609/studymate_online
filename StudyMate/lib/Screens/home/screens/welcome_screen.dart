@@ -36,13 +36,13 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
                 children: <Widget>[
                   ClipRRect(
                     child: SvgPicture.asset(
-                      "assets/icons/grad_cap.png",
+                      'assets/icons/grad_cap.png',
                       height: 180.0,
                       width: 180.0,
                     ),
                   ),
                   Text(
-                    "StudyMate",
+                    'StudyMate',
                     style: TextStyle(
                       color: Colors.white,
                       fontSize: 30.0,
@@ -60,7 +60,7 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
               child: Column(
                 children: <Widget>[
                   Text(
-                    "Welcome",
+                    'Welcome',
                     style: TextStyle(
                       color: Colors.white,
                       fontSize: 28.0,
@@ -70,7 +70,7 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
                   ),
                   SizedBox(height: 20.0),
                   Text(
-                    "Check your assignments, Attend online classes, and check your exam dates!",
+                    'Check your assignments, Attend online classes, and check your exam dates!',
                     style: TextStyle(
                       color: kTextColor,
                       fontSize: 16.0,
@@ -105,7 +105,7 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
                     children: <Widget>[
                       Flexible(
                         child: Text(
-                          "GET STARTED",
+                          'GET STARTED',
                           style: TextStyle(
                             color: Colors.white,
                             fontSize: 14.0,
