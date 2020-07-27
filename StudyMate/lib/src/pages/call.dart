@@ -55,7 +55,7 @@ class _CallPageState extends State<CallPage> {
     await _initAgoraRtcEngine();
     _addAgoraEventHandlers();
     await AgoraRtcEngine.enableWebSdkInteroperability(true);
-    var configuration = VideoEncoderConfiguration();
+    VideoEncoderConfiguration configuration = VideoEncoderConfiguration();
     configuration.dimensions = Size(1920, 1080);
     await AgoraRtcEngine.setVideoEncoderConfiguration(configuration);
     await AgoraRtcEngine.joinChannel(null, widget.channelName, null, 0);
@@ -127,7 +127,6 @@ class _CallPageState extends State<CallPage> {
 
   /// Helper function to get list of native views
   List<Widget> _getRenderViews() {
-    // ignore: omit_local_variable_types
     final List<AgoraRenderWidget> list = [];
     if (widget.role == ClientRole.Broadcaster) {
       list.add(AgoraRenderWidget(0, local: true, preview: true));
